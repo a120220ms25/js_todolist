@@ -126,6 +126,32 @@ body {
   border-bottom: 2px solid #333333;
 }
 
+.uncomplete .delBtn {
+  float: right;
+  color: black;
+  opacity: 0;
+  background-color: #fff;
+  border: none;
+  padding: 15px 8px;
+}
+
+.uncomplete .delBtn:hover {
+  opacity: 1;
+}
+
+.finished .delBtn {
+  float: right;
+  color: black;
+  opacity: 0;
+  background-color: #fff;
+  border: none;
+  padding: 15px 8px;
+}
+
+.finished .delBtn:hover {
+  opacity: 1;
+}
+
 .list {
   display: -webkit-box;
   display: -webkit-flex;

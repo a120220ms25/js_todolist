@@ -56,6 +56,33 @@ body {
     }
   }
 }
+.uncomplete {
+  .delBtn{
+    float: right;
+    color: black;
+    opacity: 0;
+    background-color: #fff;
+    border: none;
+    padding: 15px 8px;
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+}
+.finished{
+  .delBtn{
+    float: right;
+    color: black;
+    opacity: 0;
+    background-color: #fff;
+    border: none;
+    padding: 15px 8px;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
 .list{
   // padding: 16px;
   display: flex;
