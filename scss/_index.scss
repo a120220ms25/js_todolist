@@ -1,0 +1,126 @@
+.title{
+  font-family: 'Baloo Tammudu 2';
+  font-size: 48px;
+  color: #333333;
+  letter-spacing: 8.75px;
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 26px;
+  @include mobile{
+    font-size: 36px;
+  }
+}
+.addInput{
+  padding: 4px 0px 4px 24px;
+  display: flex;
+  justify-content: space-between;
+  .inputText{
+    width: 100%;
+    border:none;
+    outline:none;
+    padding: 10px 0px;
+    font-size: 18px;
+  }
+  .inputBtn{
+    margin-right: 4px;
+    font-size: 32px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 0 12px;
+    &:hover{
+      box-shadow: 0 0 15px 0 rgba(0,0,0,0.15);
+    }
+  }
+}
+.nav{
+  font-size: 14px;
+  border-bottom: 1px solid $lightGray;
+  li{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 33%;
+    text-align: center;
+    &:hover{
+      cursor: pointer;
+      color: $primary;
+      font-weight: bolder;
+      border-bottom: 2px solid $primary;
+    }
+  }
+}
+.list{
+  // padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .listItem{
+  border-bottom: 1px solid $lightGray;
+  width: 80%;
+  padding: 15px 8px ;
+  // padding-top: 5px;
+  }
+  .delBtn{
+    float: right;
+    color: black;
+    opacity: 0;
+    background-color: #fff;
+    border: none;
+    padding: 15px 8px;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  .icon{
+   padding: 15px 8px;
+  }
+
+}
+.main-footer{
+   color: $primary;
+}
+input[type=checkbox]{
+  margin-right: 16px;
+ 
+}
+label{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  @include mobile{
+    width: 85%;
+  }
+}
+
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  p{
+    padding: 15px;
+  }
+  // transition: 0.2s;
+  // border: 1px solid black;
+}
+.checked {
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  content: '';
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  color: #ffd370;
+ 
+  // border-style: solid;
+  // border-width: 0 2px 2px 0;
+  // top: 12px;
+  // left: 20px;
+  // transform: rotate(45deg);
+  // height: 15px;
+  // width: 7px;
+}
+label{
+  display: inline-block;
+}

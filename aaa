@@ -1,0 +1,60 @@
+// 初始化
+function renderData(){
+  if(data.length==0){
+    main.style.display="none";
+  }else{
+    main.style.display="block";
+  }
+
+  let str=" ";
+  data.forEach(function(item,index){
+  str+=`
+  <li class="w-100 list">
+  <i class="icon far fa-square-full"></i>
+  <p class="d-inline-block listItem">${item.content}</p>
+  <input class="delBtn" data-num="${index}" type="button" value="X">
+  </li>
+ 
+  `
+  })
+  
+  list.prepend(str);
+}
+
+
+renderData();
+
+// 新增 把值取出再丟回data
+inputBtn.addEventListener('click',function(e){
+  if(inputText.value==""){
+    alert('請輸入代辦事項!')
+    return;
+  }
+  let obj={};
+  let newData=(inputText.value).trim();
+  obj.content=newData;
+  data.push(obj);
+  console.log(data);
+  renderData();
+})
+
+// 刪除
+list.on('click',function(e){
+  // if(e.target.)
+  if(e.target.getAttribute('class')=='delBtn'){
+    let num = e.target.getAttribute('data-num');
+    data.splice(num,1);
+    renderData();
+  }
+})
+
+// 已完成
+list.on('click',function(e){
+  if(e.target.nodeName=="P"){
+     e.target.classList.toggle('checked');
+     console.log(e.target);
+    //  e.target.classList.toggle('fas fa-check');
+     
+  }
+   
+})
