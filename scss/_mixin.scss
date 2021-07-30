@@ -3,3 +3,16 @@
     @content
   }
 }
+.title{
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 48px;
+  color: #333333;
+  letter-spacing: 8.75px;
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 26px;
+  @include mobile{
+    font-size: 36px;
+  }
+}
+

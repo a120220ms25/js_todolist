@@ -230,12 +230,15 @@ $('.uncomplete').on('click','.un-checkbox',function(){
 
   let mins = time.getUTCMinutes();
   let sec = time.getSeconds();
+  console.log(mins);
+
 
   let secDeg = sec*6;
-  let minsDeg = mins*6+sec*0.1;
+  let minsDeg = (mins*6)+(sec*0.1);
   let hourDeg = hour*30+mins*0.5;
   console.log(hourDeg);
   console.log(secDeg);
+  console.log(minsDeg);
 
 
    document.write(`
