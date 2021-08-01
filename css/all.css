@@ -126,6 +126,10 @@ body {
   border-bottom: 2px solid #333333;
 }
 
+.nav-link {
+  color: black;
+}
+
 .uncomplete .delBtn {
   float: right;
   color: black;

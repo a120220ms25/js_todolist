@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/all.css">
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/a120220ms25/pic/master/favicon_todolist.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
                   <div class="secP"></div>
               </div>
           </div>
-          <div class="todolist ms-3 ms-lg-0 mb-5 col-12 col-lg-6" style="z-index:999" >
+          <div class="todolist mx-3 ms-lg-0 mb-5 col-12 col-lg-6" style="z-index:999" >
             <div class="title fs-2 mt-4">TODO LIST</div>
             <!-- add -->
             <div class="addInput container boxStyle mb-2">
@@ -47,13 +47,18 @@
             </div>
             <!-- nav -->
             <div class="main container boxStyle p-0 ">
-              <nav>
-                <div class="nav main-header d-flex justify-content-between" >
-                  <li clsaa="nav_all nav-link active" data-bs-toggle="tab" data-bs-target="#all" type="button">全部</li>
-                  <li clsaa="nav_all nav-link" data-bs-toggle="tab" data-bs-target="#uncomplete" type="button">待完成</li>
-                  <li clsaa="nav_all nav-link " data-bs-toggle="tab" data-bs-target="#finished" type="button">已完成</li>
-                </div>
-              </nav>
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active fs-8 fs-lg-6" aria-current="page" href="#"  data-bs-toggle="tab" data-bs-target="#all" >全部</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-8 fs-lg-6" href="#" data-bs-toggle="tab" data-bs-target="#uncomplete">待完成</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-8 fs-lg-6" data-bs-toggle="tab" data-bs-target="#finished" href="#" >已完成</a>
+                </li>
+              </ul>
+
                  
                  <div class="main-body p-2 ps-3 p-lg-4 tab-content">
                    <ul class="tab-pane fade show active list" id="all"></ul>
